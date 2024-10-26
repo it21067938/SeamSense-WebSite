@@ -8,7 +8,27 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html, body {
+  overflow-x: hidden;   /* Hide horizontal scroll */
+  width: 100%;          /* Ensure full width is used */
+  margin: 0;            /* Remove any default margins */
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Optional: Ensure child elements do not cause horizontal overflow */
+.container-fluid, 
+* {
+  max-width: 100%;      /* Prevent elements from expanding beyond the viewport */
+  box-sizing: border-box;
+}
+
+/* Optional: Handle potential layout shifts on smaller screens */
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden; /* Reapply to prevent specific mobile issues */
+  }
+}
 body {
   background: #fff;
   color: #666666;
@@ -131,19 +151,38 @@ h6 {
   padding: 0 15px;        /* Add padding for content spacing */
   box-sizing: border-box;
 }
-
-/* Responsive layout for smaller screens */
+/* Responsive layout for tablets */
 @media (max-width: 768px) {
   .container-fluid {
-      padding: 0 10px;
+    padding: 0 10px;
+  }
+  #header #logo h1 {
+    font-size: 28px;       /* Adjust font size */
+  }
+  #header {
+    height: 80px;          /* Reduce header height */
+    padding: 15px 0;
   }
 }
 
+/* Responsive layout for mobile phones */
 @media (max-width: 480px) {
   .container-fluid {
-      padding: 0 5px;
+    padding: 0 5px;
+  }
+  #header {
+    height: 70px;
+    padding: 10px 0;
+  }
+  #header #logo h1 {
+    font-size: 24px;       /* Further reduce font size */
+    letter-spacing: 2px;
+  }
+  #header #logo img {
+    max-width: 100px;      /* Scale the logo */
   }
 }
+
 
 #header {
   padding: 30px 0;
@@ -459,7 +498,7 @@ h6 {
   right: 0;
   top: 0;
   z-index: 999;
-  margin: 20px 20px 0 0;
+  margin: 0px 0px 0 0;
   border: 0;
   background: none;
   font-size: 24px;
