@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SeamSense</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+ 
+
+
+  <!-- Favicons -->
+  <link href="https://res.cloudinary.com/hiruniherath/image/upload/v1726413655/Screenshot_2024-09-09_213820_ifbsvg-removebg-preview_afcfwy.png" rel="icon">
+  <link href="https://res.cloudinary.com/hiruniherath/image/upload/v1726413655/Screenshot_2024-09-09_213820_ifbsvg-removebg-preview_afcfwy.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Swiper Stylesheet-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
+<link rel="stylesheet" href="./style.css">
+ <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+ 
+  <script>
+    const mobileNavToggle = document.querySelector('#mobile-nav-toggle');
+    const mobileNav = document.querySelector('#mobile-nav');
+    const bodyOverlay = document.querySelector('#mobile-body-overly');
+    const body = document.body;
+  
+    // Toggle the mobile nav and overlay on click
+    mobileNavToggle.addEventListener('click', () => {
+      const isActive = body.classList.contains('mobile-nav-active');
+      
+      if (isActive) {
+        mobileNav.style.left = '-100%'; // Slide out
+        bodyOverlay.style.display = 'none'; // Hide overlay
+      } else {
+        mobileNav.style.left = '0'; // Slide in
+        bodyOverlay.style.display = 'block'; // Show overlay
+      }
+      body.classList.toggle('mobile-nav-active');
+    });
+  
+    // Hide mobile nav and overlay when clicking outside
+    bodyOverlay.addEventListener('click', () => {
+      mobileNav.style.left = '-100%'; // Slide out
+      bodyOverlay.style.display = 'none'; // Hide overlay
+      body.classList.remove('mobile-nav-active');
+    });
+  </script>
+  
+  
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+      <div id="logo" class="pull-left">
+        <img src="https://res.cloudinary.com/hiruniherath/image/upload/v1726677908/WhatsApp_Image_2024-09-18_at_21.13.29_78908614-removebg-preview_kto2k2.png" 
+             alt="loading" style="width:150px;margin-top:-25px">
+      </div>
+  
+      <button id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
+  
+      <nav id="nav-menu-container" class="desktop-nav">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#domain">Domain</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#milestone">Milestone</a></li>
+          <li><a href="#portfolio">Resources</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Mobile Nav -->
+      <nav id="mobile-nav">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#domain">Domain</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#milestone">Milestone</a></li>
+          <li><a href="#portfolio">Resources</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-body-overly"></div>
+    </div>
+  </header>
+  
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="https://i0.wp.com/rmgbd.net/wp-content/uploads/2020/01/Srilankan_Apparel.jpg?fit=1350%2C900&ssl=1" alt="loading"></div>
+            <div class="carousel-container">
+                <div class="carousel-content">
+                    <h2>Transforming Sri Lanka's Apparel Industry</h2>
+                    <p>Optimizing production with predictive maintenance and real-time data.</p>
+                    <a href="#featured-services" class="btn-get-started scrollto">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-item">
+            <div class="carousel-background"><img src="https://srilankamirror.com/wp-content/uploads/2023/11/garment_1200px_2023_11_23.jpg" alt="2nd image"></div>
+            <div class="carousel-container">
+                <div class="carousel-content" >
+                    <h2>Smart Solutions for Medium-Scale Businesses</h2>
+                    <p>Leverage cutting-edge technologies for operational excellence.</p>
+                    <a href="#featured-services" class="btn-get-started scrollto">View More</a>
+                </div>
+            </div>
+        </div>
+        
+
+        
+          
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+          <!-- First Card -->
+          <div class="col-lg-4 mb-4">
+            <div class="card shadow-lg h-100 card-hover">
+              <div class="card-body text-center">
+                <i class="ion-ios-analytics-outline" style="font-size: 64px; color: #095b95;"></i>
+                <h4 class="card-title mt-4" style="color:#095b95;">Precision Insights</h4>
+                <p class="card-text mt-3">Data-driven predictions powered by verified, high-quality insights from industry experts.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Second Card -->
+          <div class="col-lg-4 mb-4">
+            <div class="card shadow-lg h-100 card-hover">
+              <div class="card-body text-center">
+                <i class="ion-ios-stopwatch-outline" style="font-size: 64px; color: #095b95;"></i>
+                <h4 class="card-title mt-4" style="color:#095b95;">Instant Results</h4>
+                <p class="card-text mt-3">Experience lightning-fast predictions that provide results in real-time, ensuring efficiency.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Third Card -->
+          <div class="col-lg-4 mb-4">
+            <div class="card shadow-lg h-100 card-hover">
+              <div class="card-body text-center">
+                <i class="ion-ios-speedometer-outline" style="font-size: 64px; color: #095b95;"></i>
+                <h4 class="card-title mt-4" style="color:#095b95;">Seamless Experience</h4>
+                <p class="card-text mt-3">Designed with simplicity in mind, our interface offers effortless navigation and clarity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- #featured-services -->
+
+    
+
+    <!--==========================
+      Domain  Section
+    ============================-->
+    <section id="domain">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Domain</h3>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="https://miro.medium.com/v2/resize:fit:1358/1*AJenSTENCJvzhCYeMIGZMg.gif" style="width: 350px;height: 250px;" alt="" class="img-fluid">
+              
+              </div>
+              <h2 class="title">Literature Review</a></h2>
+              <p>Sri Lanka’s apparel industry faces challenges in keeping
+                up with global standards due to outdated methodologies.
+                Key focus areas include sewing machine performance,
+                automated decision making, predictive maintenance,
+                workforce optimization, and operational efficiency
+                monitoring systems. The performance of sewing machines in
+                garment manufacturing is crucial for labor productivity and
+                quality control. Traditional manual methods often lead to
+                inconsistencies and high defect rates. Real-time monitoring
+                systems are essential for ensuring needle functionality and
+                stitch quality. This study focuses on developing real-time
+                monitoring systems using sensors and machine learning
+                to identify needle failures before they occur, using an IoT
+                device to identify broken needles and missing lengths. </p>
+                
+              <button type="button" style="margin-top: 35px;margin-bottom: 35px; padding: 10px; border-radius: 0;background-color:#000000;" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#litReview">
+                  Read More &gt;&gt;
+                </button> 
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col" >
+              <div class="img">
+                <img src="https://assets.website-files.com/6174a877844b8d384f2230b9/621405faf156b68381c89877_Untitled%20design.gif" style="width: 350px;height: 250px;" alt="" class="img-fluid">
+             
+              </div>
+              <h2 class="title">Research Gap</a></h2>
+              <p>
+                The apparel industry, particularly in medium-scale businesses, has not fully harnessed automation and advanced technologies, leaving significant gaps in efficiency, productivity, and quality control. Traditional manual methods dominate pre-production and sewing operations, resulting in delays, errors, and underutilization of resources. The existing literature emphasizes the potential of predictive maintenance, machine learning, and IoT-based systems to enhance performance, yet these advancements remain largely underexplored in small to medium-sized apparel firms.
+              </p>
+              <button type="button" style="margin-top: 35px;margin-bottom: 35px; padding: 10px; border-radius: 0;background-color:#000000;" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#researchGap">
+                  Read More &gt;&gt;
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col" >
+              <div class="img">
+                <img src="https://cdn.dribbble.com/users/1602563/screenshots/8869646/media/ddc33ce2c8e2570c410123f375e2c35c.gif"style="width: 350px;height: 250px;" alt="" class="img-fluid">
+                
+              </div>
+              <h2 class="title">Research Problem</a></h2>
+              <p>
+                The apparel industry, particularly for medium-sized businesses, is heavily reliant on manual processes, especially in the pre-production and production phases. This reliance creates inefficiencies, such as unplanned machine downtimes, inconsistent quality control, and suboptimal workforce management. In Sri Lanka’s garment sector, these challenges hinder competitiveness in a global market that increasingly demands speed, precision, and adaptability. Furthermore, outdated machinery and reactive maintenance strategies exacerbate operational inefficiencies and increase production costs.
+
+              </p>  
+              <button type="button"style="margin-top: 35px;margin-bottom: 35px; padding: 10px; border-radius: 0;background-color:#000000;"  class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#researchProb">
+                  Read More &gt;&gt;
+                </button>          
+            </div>
+          </div>
+        </div>
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="https://i.pinimg.com/originals/ea/db/74/eadb74787dda41cc6333341e55293432.gif" style="width: 350px;height: 250px;" class="img-fluid">
+              </div>
+              <h2 class="title">Research Objectives</a></h2>
+              <p>
+                This research aims to revolutionize the apparel manufacturing process by integrating IoT-based solutions with machine learning to address key challenges. The primary focus is to enhance real-time monitoring of sewing machines, enabling manufacturers to track machine performance remotely and efficiently. This platform will provide continuous data streams, helping medium-scale manufacturers respond to performance issues promptly.
+                
+              </p>
+              <button type="button" style="margin-top: 35px;margin-bottom: 35px; padding: 10px; border-radius: 0;background-color:#000000;" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#researchObj">
+                  Read More &gt;&gt;
+                </button>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col" style="margin-bottom:10px;">
+              <div class="img">
+                <img src="https://cdn.dribbble.com/users/279323/screenshots/14971889/media/71b67194687254b9d3d6a8e139679ba4.gif" style="width: 350px;height: 250px;"alt="" class="img-fluid">
+             
+              </div>
+              <h2 class="title">Methodology</a></h2>
+              <p>
+                This research leverages IoT and machine learning technologies to improve various aspects of apparel manufacturing, including pre-production decision-making, machine performance monitoring, predictive maintenance, and workforce optimization. Pre-production optimization focuses on fabric and thread selection, cost estimation, and scheduling accuracy. A weighted scoring model and regression algorithms are used to predict the durability of single, dual, and tri-blend fabrics based on tensile strength tests. Additionally, the system suggests optimal fabric-thread combinations aligned with end-use requirements, budget constraints, and future cost projections to enhance efficiency and profitability before production begins.
+              </p>
+              <button  type="button" style="margin-top: 35px;margin-bottom: 35px; padding: 10px; border-radius: 0;background-color:#000000;" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#methodology">
+                  Read More &gt;&gt;
+                </button>
+              
+            </div>
+          </div>
+
+          
+<hr>
+      </div>
+    </section><!-- #domain -->
+
+
+    <!-- Technologies -->
+
+    <div class="row about-cols" style="background-color: #000000; color: #ffffff; padding: 40px 0;">
+      <div class="col-md-12 wow fadeInUp">
+        <h2 class="title" style="text-align: center; margin-bottom: 40px;">Technologies</h2>
+      </div>
+    
+      <!-- React JS -->
+      <div class="col-md-2 wow fadeInUp" style="text-align: center;">
+        <div class="about-col">
+          <div class="img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" style="width: 80px; height: 80px;" alt="React JS" class="img-fluid">
+          </div>
+          <h4 class="tech-title" style="margin-top: 15px;">React JS</h4>
+        </div>
+      </div>
+    
+      <!-- Python -->
+      <div class="col-md-2 wow fadeInUp" style="text-align: center;">
+        <div class="about-col">
+          <div class="img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" style="width: 80px; height: 80px;" alt="Python" class="img-fluid">
+          </div>
+          <h4 class="tech-title" style="margin-top: 15px;">Python</h4>
+        </div>
+      </div>
+    
+      <!-- Machine Learning -->
+      <div class="col-md-2 wow fadeInUp" style="text-align: center;">
+        <div class="about-col">
+          <div class="img">
+            <img src="https://cdn-icons-png.flaticon.com/512/7017/7017532.png" style="width: 80px; height: 80px;" alt="Machine Learning" class="img-fluid">
+          </div>
+          <h4 class="tech-title" style="margin-top: 15px;">Machine Learning</h4>
+        </div>
+      </div>
+    
+      <!-- MUI Framework -->
+      <div class="col-md-2 wow fadeInUp" style="text-align: center;">
+        <div class="about-col">
+          <div class="img">
+            <img src="https://mui.com/static/logo.png" style="width: 80px; height: 80px;" alt="MUI Framework" class="img-fluid">
+          </div>
+          <h4 class="tech-title" style="margin-top: 15px;">MUI Framework</h4>
+        </div>
+      </div>
+    
+      <!-- Firebase -->
+      <div class="col-md-2 wow fadeInUp" style="text-align: center;">
+        <div class="about-col">
+          <div class="img">
+            <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" style="width: 80px; height: 80px;" alt="Firebase" class="img-fluid">
+          </div>
+          <h4 class="tech-title" style="margin-top: 15px;">Firebase</h4>
+        </div>
+      </div>
+    
+      <!-- IoT -->
+      <div class="col-md-2 wow fadeInUp" style="text-align: center;">
+        <div class="about-col">
+          <div class="img">
+            <img src="https://cdn-icons-png.flaticon.com/512/10355/10355707.png" style="width: 80px; height: 80px;" alt="IoT" class="img-fluid">
+          </div>
+          <h4 class="tech-title" style="margin-top: 15px;">IoT</h4>
+        </div>
+      </div>
+    </div>
+    
+    <!--==========================
+      Features Section
+
+
+    ============================-->
+
+    <section id="features">
+      <div class="container">
+        <header class="section-header wow fadeInUp">
+          <h3>Our Key Features</h3>
+          <p>Explore our advanced solutions that drive precision, efficiency, and excellence in the apparel industry.</p>
+        </header>
+    
+        <div class="row">
+          <!-- First Card -->
+          <div class="col-lg-6 mb-4">
+            <div class="custom-box h-100 shadow-sm">
+              <div class="custom-img">
+                <img src="https://audaces.com/wp-content/uploads/2024/04/efficient-fashion-feature-scaled.webp" alt="Optimization Image" class="img-fluid"> <!-- Replace with your image -->
+              </div>
+              <div class="custom-title">
+                <h4>Automated Optimization of Pre-Production Decision Making</h4>
+              </div>
+              <div class="custom-content">
+                <p><strong>Objective:</strong> Streamline the pre-production phase by automating decisions related to fabric selection, cost estimation, and necessary materials.</p>
+                <p><strong>Techniques:</strong> We use weighted scoring models, ridge regression, and machine learning to predict fabric durability, optimize thread combinations, and estimate costs.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Second Card -->
+          <div class="col-lg-6 mb-4">
+            <div class="custom-box h-100 shadow-sm">
+              <div class="custom-img">
+                <img src="https://i0.wp.com/textilemerchandising.com/wp-content/uploads/2016/06/101-guide-for-purchasing-the-right-sewing-machine.jpg?fit=660%2C440&ssl=1" alt="Needle Monitoring Image" class="img-fluid"> <!-- Replace with your image -->
+              </div>
+              <div class="custom-title">
+                <h4>Sewing Machine Needle Performance and Stitch Monitoring System</h4>
+              </div>
+              <div class="custom-content">
+                <p><strong>Objective:</strong> Enhance needle safety and performance through real-time monitoring and predictive maintenance.</p>
+                <p><strong>Techniques:</strong> YOLO object detection with an ESP32-CAM module for identifying needle fragments, and Hall effect sensors for needle usage monitoring with a Grafana dashboard.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Third Card -->
+          <div class="col-lg-6 mb-4">
+            <div class="custom-box h-100 shadow-sm">
+              <div class="custom-img">
+                <img src="https://hellosewing.com/wp-content/uploads/best-sewing-machine-for-making-clothes-765x510.jpg" alt="Predictive Maintenance Image" class="img-fluid"> <!-- Replace with your image -->
+              </div>
+              <div class="custom-title">
+                <h4>Sewing Machine Predictive Maintenance Monitoring System</h4>
+              </div>
+              <div class="custom-content">
+                <p><strong>Objective:</strong> Predict and prevent sewing machine failures through data analysis and predictive modeling.</p>
+                <p><strong>Techniques:</strong> XGBoost for predictive maintenance, using Flask and React for data processing and user interface.</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Fourth Card -->
+          <div class="col-lg-6 mb-4">
+            <div class="custom-box h-100 shadow-sm">
+              <div class="custom-img">
+                <img src="https://img.freepik.com/premium-photo/fashion-design-stylist-young-designer-working-with-sewing-machine-busy-creative-business-employee-creating-new-trendy-fashionable-clothes-man-work-with-material-workshop_590464-67841.jpg" alt="Workforce Optimization Image" class="img-fluid"> <!-- Replace with your image -->
+              </div>
+              <div class="custom-title">
+                <h4>Workforce Optimization and Operation Efficacy Monitoring System (WOEMS)</h4>
+              </div>
+              <div class="custom-content">
+                <p><strong>Objective:</strong> Improve labor efficiency and operational productivity through data-driven insights.</p>
+                <p><strong>Techniques:</strong> Random Forest Regression for predicting labor performance, React and D3.js for dynamic data visualization, and Chart.js for interactive charts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- #services -->
+<hr>
+
+        <!--==========================
+      Milestone Section
+    ============================-->
+
+    <!----ms 2---->
+     <section id="milestone" class="cd-timeline js-cd-timeline" style="background-color: #000000;">
+     	<header class="section-header">
+          <h3 class="section-title" style="color:#ffffff">Milestones</h3>
+        </header>
+    <div class="container max-width-lg cd-timeline__container">
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/presentation.svg" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Topic Assesment</h2>
+          <p class="color-contrast-medium">
+            The purpose of topic evaluation is to determine the viability of the subjects chosen by the pupils. Topics may be accepted with minor and significant suggestions at this stage, or they may be rejected.InCarto was accepted on the condition to prove the availability of data sources.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date" style="color:#ffffff">10th February 2024
+             
+	</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--movie">
+          <img src="assets/img/presentation.svg" alt="Movie">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Project Charter</h2>
+          <p class="color-contrast-medium">
+			A project charter is a formal, often brief document that explains the whole project, including the objectives, how it will be carried out, and who the stakeholders are. It is an essential component of project planning since it is utilized throughout the project lifecycle.            </p>
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date" style="color:#ffffff">19th February 2024	</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--movie">
+          <img src="assets/img/presentation.svg" alt="Movie">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Project Proposal</h2>
+          <p class="color-contrast-medium">
+			A project proposal is a thorough explanation of a sequence of actions that will be carried out in order to solve the research challenge. To be successful, the paper should give a coherent explanation of the research topic and demonstrate its relevance. The project proposal document is used to coordinate time and resources in order to finish the project to a high quality. It is an informal contract to develop an agreement on the final output's content and limitations.              <ul>
+                <li>
+                  Project Proposal document  - 6%
+                </li>
+                <li>
+                  Project Proposal presentation - 6%
+                </li>
+              </ul>
+            </p>
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date" style="color:#ffffff">21th February 2024 	</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--picture">
+          <img src="assets/img/report.svg" alt="Picture">
+        </div> <!-- cd-timeline__img -->
+        <div class="cd-timeline__content text-component">
+          <h2>Project Status document</h2>
+          <p class="color-contrast-medium">
+              The aim of this document is to gather and analyze and give an in-depth insight of the complete system by defining the problem statement in detail. Nevertheless, it also concentrates on the capabilities required by stakeholders and their needs while defining high-level product features. The detailed requirements of the system are provided in this document.
+              <ul>
+                 
+                  <li>
+                    Project Status Document - 1%
+                  </li>
+                </ul>
+            </p>
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date" style="color:#ffffff">6th May 2024	</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/presentation.svg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Progress Presentation I</h2>
+          <p class="color-contrast-medium">
+			In this presentation, a system that is 50% complete is evaluated, and potential development areas are explored.            <ul>  
+              <li>
+                        Progress Presentation - 15%
+              </li>
+            </ul>
+          </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date" style="color:#ffffff">8th May 2024	</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/report.svg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Research paper</h2>
+          <p class="color-contrast-medium">
+            Overall research findings of the group are aggregated in to one research paper or several individual research papers. 
+            Full marks are awarded if the research paper is published in a highly recognized conference with a higher h-index value.Incarto based research was successfully published in ICOSEC 2022 which contains 17 h-index value. 
+              <ul>  
+                <li>
+                  Research paper - 10%
+                </li>
+              </ul>
+          </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date" style="color:#ffffff">14th June 2024	</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/presentation.svg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Progress Presentation II</h2>
+          <p class="color-contrast-medium">
+            In this assessment 90% developed system is demonstrated along with the poster. Here, the examiners evaluate whether the system meets 90% of the requirements defined in SRS and give suggestions on the areas that should be developed. 
+            <ul>  
+                <li>
+                          Progress Presentation - 18%
+                </li>
+              </ul>
+          </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date" style="color:#ffffff">9th September 2024 </span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/web.svg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Website Assessment</h2>
+          <p class="color-contrast-medium">
+            Website designed for marketing purpose of the system is assessed here.
+            <ul>  
+                <li>
+                  Website Assessment - 2%
+                </li>
+              </ul>
+          </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date" style="color:#ffffff">21st Octomber 2024</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--location">
+          <img src="assets/img/report.svg" alt="Location">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Final report</h2>
+          <p class="color-contrast-medium">
+            This submission requires five reports of the research findings of the whole group as well as each individual's. Each individual report must be written by the sole author, clearly state their Individual objectives, theme, contribution and must clearly demonstrate the individual’s work.
+            <ul>  
+                <li>
+                  Individual report - 19%
+
+                </li>
+                <li>
+                  	Project Status document and
+Student Logbook/Research paper registration notification - 3%
+                </li>
+              </ul>
+          </p>
+
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date" style="color:#ffffff">2nd December 2024
+	</span>
+            <!-- <a href="#0" class="btn btn--subtle">Read more</a> -->
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+
+      <div class="cd-timeline__block">
+        <div class="cd-timeline__img cd-timeline__img--movie">
+          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+        </div> <!-- cd-timeline__img -->
+
+        <div class="cd-timeline__content text-component">
+          <h2>Final Presentation & Viva</h2>
+          <p class="color-contrast-medium">Video demonstration of the completed sytem is evaluated here. and during the viva aach student is evaluated on the understanding of the programming concepts, coding, thoeries etc.</p>
+          <ul>
+              <li>Final Presentation & viva - 20%</li>
+          </ul>
+          <div class="flex justify-between items-center">
+            <span class="cd-timeline__date">30th Octomber 2024</span>
+          </div>
+        </div> <!-- cd-timeline__content -->
+      </div> <!-- cd-timeline__block -->
+    </div>
+  </section> <!-- cd-timeline -->
+  <script src="assets/js/main.js"></script>
+	<!----/ms 2--------->
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Project Resources</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <!-- <li data-filter=".filter-app">Project Charter</li> -->
+              <li data-filter=".filter-card">Proposal Document</li>
+              <li data-filter=".filter-web">Status Document</li>             
+              <li data-filter=".filter-rp">Research Logbook</li>
+			  <li data-filter=".filter-ppr">Research Paper</li>
+              <li data-filter=".filter-fd">Final Document</li>
+              <li data-filter=".filter-pp">Presentation slides</li>
+              <!-- <li data-filter=".filter-pp2">Prototype Presentation</li> -->
+            </ul>
+          </div>
+        </div>
+
+<!-- CHARTER -->
+       <div class="row portfolio-container">
+
+          <!--  <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="https://dasceq.com/wp-content/uploads/2022/04/business-analytics.gif" class="img-fluid" alt="" style="width:350px; height:235px">
+                <a class="link-details" title="More Details" href="https://res.cloudinary.com/iplus/raw/upload/v1667732996/Researchdocs/charter_vsvhd6.doc" download><i class="ion ion-android-download"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4>Project Charter</h4>
+              </div>
+            </div>
+          </div> -->
+<!-- PROPOSAL -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="https://media.licdn.com/dms/image/C4E12AQGipKJeKsf7Vg/article-cover_image-shrink_600_2000/0/1620831990282?e=2147483647&v=beta&t=xTRsoGwaTNCwXV_74NfnUQtWU6xk2BvzCc-9eJe7zNg" class="img-fluid" alt="">
+                <a class="link-details" title="More Details" href="https://drive.google.com/drive/folders/12LNnkQmkriAAu6LYtFi7021xaF189PoQ?usp=sharing" target="_blank"  download><i class="ion ion-android-download"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4>Project Proposal</h4>
+              </div>
+            </div>
+          </div>
+<!-- Status -->
+         
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="https://media.licdn.com/dms/image/D4D12AQEn7iaT75cWSw/article-cover_image-shrink_600_2000/0/1662465946904?e=2147483647&v=beta&t=rB49pwFfArb1YzjQj74s-yLJ5o_adI8Ea8Iy2jGh2tg" class="img-fluid" alt="">
+                  <a class="link-details" title="More Details" href="https://drive.google.com/file/d/13SgAj_Y6l2f5FebrCYL5rBCB-FfVhqfU/view?usp=sharing" download><i class="ion ion-android-download"></i></a>
+                </figure>
+  
+                <div class="portfolio-info">
+                  <h6>IT21027888 Herath H M H S</a></h6>
+                  <p>Status Document</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="https://media.licdn.com/dms/image/D4D12AQEn7iaT75cWSw/article-cover_image-shrink_600_2000/0/1662465946904?e=2147483647&v=beta&t=rB49pwFfArb1YzjQj74s-yLJ5o_adI8Ea8Iy2jGh2tg" class="img-fluid" alt="">
+                <a class="link-details" title="More Details" href="https://drive.google.com/file/d/1Q8voxvk16Z-bdJbj1Wnv1K1kf6MARulh/view?usp=sharing" download><i class="ion ion-android-download"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h6>IT20633868 Jayaweera J M M G</a></h6>
+                  <p>Status Document</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.3s">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="https://media.licdn.com/dms/image/D4D12AQEn7iaT75cWSw/article-cover_image-shrink_600_2000/0/1662465946904?e=2147483647&v=beta&t=rB49pwFfArb1YzjQj74s-yLJ5o_adI8Ea8Iy2jGh2tg" class="img-fluid" alt="">
+                  <a class="link-details" title="More Details" href="https://drive.google.com/file/d/1zu8o4mcm6ECATBKucUj85r-m3OtKkIzF/view?usp=sharing" download><i class="ion ion-android-download"></i></a>
+                </figure>
+  
+                <div class="portfolio-info">
+                  <h6>IT21045158 Jayasinghe J M Y</a></h6>
+                  <p>Status Document</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.4s">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <img src="https://media.licdn.com/dms/image/D4D12AQEn7iaT75cWSw/article-cover_image-shrink_600_2000/0/1662465946904?e=2147483647&v=beta&t=rB49pwFfArb1YzjQj74s-yLJ5o_adI8Ea8Iy2jGh2tg" class="img-fluid" alt="">
+                    <a class="link-details" title="More Details" href="https://drive.google.com/file/d/1zu8o4mcm6ECATBKucUj85r-m3OtKkIzF/view?usp=sharing" download><i class="ion ion-android-download"></i></a>
+                  </figure>
+    
+                  <div class="portfolio-info">
+                    <h6>IT21067938 Randeni K M T D</a></h6>
+                  <p>Status Document</p>
+                  </div>
+                </div>
+            </div>
+<!-- RESEARCH Logbook
+            <div class="col-lg-4 col-md-6 portfolio-item filter-rp wow fadeInUp">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="https://media.licdn.com/dms/image/D4E12AQGQUH6QMDuKuQ/article-cover_image-shrink_600_2000/0/1716490770143?e=2147483647&v=beta&t=zacjDaWb4A9ru_mtWw1tZaqAFTnQUr0lYNtpQkS64Nk" style="width:350px; height:235px"class="img-fluid" alt="">
+                  <a class="link-details" title="More Details" href="https://drive.google.com/drive/folders/1dc506r_K2rfKfw2CTMK4nKNZRR9WO7wj?usp=share_link" target="_blank" download><i class="ion ion-android-download"></i></a>
+                </figure>
+  
+                <div class="portfolio-info">
+                  <h4>R-24_56</h4>
+                  <p>Research Logbook</p>
+                </div>
+              </div>
+            </div> -->
+
+			
+<!-- Reserch Paper -->
+
+ <div class="col-lg-4 col-md-6 portfolio-item filter-ppr wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="https://cdn.dribbble.com/users/130603/screenshots/5685838/ab_bookdemo_anim_dribbble.gif" style="width:350px; height:235px" class="img-fluid" alt="">
+                <a class="link-details" title="More Details" href="https://drive.google.com/file/d/1LNK6sg7Y4anVYF2ETMgScaL9y7qRLYAa/view?usp=sharing" download><i class="ion ion-android-download"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4>Reserch Paper</h4>
+              </div>
+            </div>
+          </div>
+
+<!-- FINAL DOCUMENTS -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-fd wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="https://media.licdn.com/dms/image/C4D12AQH3moW8i3ewrw/article-cover_image-shrink_600_2000/0/1628589993746?e=2147483647&v=beta&t=x0r-d-0VMlcRA_l3hQGm6RBCel5ZrQrV1KkIE6N167g" style="width:350px; height:235px"  class="img-fluid" alt="">
+                <a class="link-details" title="More Details" href="https://docs.google.com/document/d/1DjLZbWP4ttYoJYFl9qHaLsElYloqv09W/edit?usp=share_link&ouid=109915955758282176572&rtpof=true&sd=true" target="_blank" download><i class="ion ion-android-download"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4>R-24_56</a></h4>
+                <p>Final Document</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-fd wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="https://i.pinimg.com/originals/6d/12/aa/6d12aaf79e6e63db76eb5e04cc7f4852.gif"style="width:350px; height:235px" class="img-fluid" alt="">
+                <a class="link-details" title="More Details" href="https://drive.google.com/file/d/1Zhlpj9P394pHwRGgSaTGjGJkOl4VPFcN/view?usp=sharing"  target="_blank" download><i class="ion ion-android-download"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                  <h6>IT21027888 Herath H M H S</a></h6>
+                <p>Final Document</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-fd wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="https://i.pinimg.com/originals/6d/12/aa/6d12aaf79e6e63db76eb5e04cc7f4852.gif"style="width:350px; height:235px" class="img-fluid" alt="">
+                <a class="link-details" title="More Details" href="https://drive.google.com/file/d/1ve7dFzXFRN1EB-II59OWKiZllaP8HII3/view?usp=sharing" target="_blank" download><i class="ion ion-android-download"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h6>IT20633868 Jayaweera J M M G</a></h6>
+                <p>Final Document</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-fd wow fadeInUp" data-wow-delay="0.3s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="https://i.pinimg.com/originals/6d/12/aa/6d12aaf79e6e63db76eb5e04cc7f4852.gif"style="width:350px; height:235px" class="img-fluid" alt="">
+                <a class="link-details" title="More Details" href="https://drive.google.com/file/d/18XfUCGEB4M88RIx96fpO4rJWTo7d9ceH/view?usp=sharing"  target="_blank" download><i class="ion ion-android-download"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                  <h6>IT21045158 Jayasinghe J M Y</a></h6>
+                <p>Final Document</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-fd wow fadeInUp" data-wow-delay="0.4s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="https://i.pinimg.com/originals/6d/12/aa/6d12aaf79e6e63db76eb5e04cc7f4852.gif"style="width:350px; height:235px"class="img-fluid" alt="">
+                <a class="link-details" title="More Details" href="https://drive.google.com/file/d/1-lnpChGEz3Wpj0FQjC7r4t3V7hTJvBUo/view?usp=sharing"  target="_blank"  download><i class="ion ion-android-download"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                    <h6>IT21067938 Randenu K M T D</a></h6>
+                <p>Final Document</p>
+              </div>
+            </div>
+          </div>
+<!-- PROPSAL PP -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-pp wow fadeInUp">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <img src="https://cdn.dribbble.com/users/25238/screenshots/14356612/media/df5cdc641a039e230e9e17acc0c7c8dc.gif"  style="width:350px; height:235px" class="img-fluid" alt="">
+                    <a class="link-details" title="More Details" href="https://docs.google.com/presentation/d/1i9euykx2jYRbRkojAoYkkAIaljjMRz65/edit?usp=sharing&ouid=114337566820880393114&rtpof=true&sd=true" target="_blank" download><i class="ion ion-android-download"></i></a>
+                  </figure>
+    
+                  <div class="portfolio-info">
+                    <h4>Proposal Presentation</h4>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-pp wow fadeInUp" data-wow-delay="0.1s">
+              <div class="portfolio-wrap">
+                <figure>
+                  <img src="https://cdn.dribbble.com/users/25238/screenshots/14356612/media/df5cdc641a039e230e9e17acc0c7c8dc.gif"  style="width:350px; height:235px" class="img-fluid" alt="">
+                  <a class="link-details" title="More Details" href="https://docs.google.com/presentation/d/1CHb0twS7ZhdpAvy-TA1-LGy5DltjdSHb/edit?usp=share_link&ouid=109915955758282176572&rtpof=true&sd=true" target="_blank" download><i class="ion ion-android-download"></i></a>
+                </figure>
+  
+                <div class="portfolio-info">
+                  <h4>Progress Presentation-1</h4>
+                </div>
+              </div>
+          </div> 
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pp wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="https://cdn.dribbble.com/users/25238/screenshots/14356612/media/df5cdc641a039e230e9e17acc0c7c8dc.gif"  style="width:350px; height:235px" class="img-fluid" alt="">
+                <a class="link-details" title="More Details" href="https://docs.google.com/presentation/d/1kcm3l6Pe0eYaQ2mUneLNDGfpVxXIRgaE/edit?usp=sharing&ouid=114337566820880393114&rtpof=true&sd=true"  target="_blank" download><i class="ion ion-android-download"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4>Progress Presentation-2</h4>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-pp wow fadeInUp" data-wow-delay="0.3s">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="https://cdn.dribbble.com/users/25238/screenshots/14356612/media/df5cdc641a039e230e9e17acc0c7c8dc.gif"  style="width:350px; height:235px" class="img-fluid" alt="">
+             <a class="link-details" title="More Details"href="https://docs.google.com/presentation/d/1iO5Bi5IULzO0pEsYzH6HXpCLKAnT_X73/edit?usp=sharing&ouid=114337566820880393114&rtpof=true&sd=true"  target="_blank"  download> 
+                <i class="ion ion-android-download"></i>
+             </a> 
+            </figure>
+
+            <div class="portfolio-info">
+              <h4>Final Presentation</h4>
+            </div>
+          </div>
+      </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+
+<!-- Youtube video section -->
+<div class="row about-cols" style="background-color: #f9f9f9; padding: 10px 0;">
+  <div class="col-md-12 wow fadeInUp" style="text-align: center;">
+    <div class="section-header wow fadeInUp">
+      <h3>Watch The Video</h3>
+    </div>
+    <br>
+    <p style="font-size: 16px; color: #555; margin-bottom: 20px; max-width: 850px; margin: 0 auto;">
+      This video explores key insights into how research can be utilized to craft the trends of tomorrow, particularly in the context of technological innovations and the apparel industry. It demonstrates the importance of real-time data, machine learning, and IoT in shaping future advancements.
+    </p>
+    <br>
+    <div class="video-container" 
+         style="position: relative; width: 850px; height: 480px; margin: 0 auto; transition: transform 0.3s ease; box-shadow: none;"
+         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0px 4px 20px rgba(0, 0, 0, 0.2)';"
+         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+      <iframe width="320" height="180" 
+        src="https://www.youtube.com/embed/W4q69QkXBhI?si=pQU5VA0ZbVtdG90f" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="section-header wow fadeInUp">
+          <h3>Team MEMBERS</h3>
+        </div>
+        <br>
+        <div class="row"> 
+         <div class="col-4 col-md-6 ">
+             <div style="margin-left: 30%">
+                <img src="https://res.cloudinary.com/hiruniherath/image/upload/v1729186985/1543996976571_g5qhkg.jpg" width="250px" height="250px" alt="" style="border-radius: 50%;object-fit: cover;">
+                <div style="text-align: center;padding-top:20px">
+                  <p><b>Supervisor</b></p>
+                <h6>Mr. Nelum Amarasena</h6>
+                </div>
+                
+             </div>
+          </div>
+          <div class="col-4 col-md-6 ">
+             <div style="margin-left: 30%">
+                <img src="https://res.cloudinary.com/hiruniherath/image/upload/v1729186985/1592028174237_uruaht.jpg" width="250px" height="250px" alt="" style="border-radius: 50%;object-fit: cover;">
+                <div style="text-align: center;padding-top:20px">
+                  <p><b>Co-supervisor</b></p>
+                <h6>Mr. Samadhi Rathnayake</h6>
+                </div>
+                
+             </div>
+          </div>
+		  <div class="col-4 col-md-6 ">
+             <div style="margin-left: 30%">
+                <img src="https://res.cloudinary.com/hiruniherath/image/upload/v1729186943/c2173c45-3d38-4b7c-a1a7-35d120314b79.png" width="250px" height="250px" alt="" style="border-radius: 50%;object-fit: cover;">
+                <div style="text-align: center;padding-top:20px">
+                  <p><b>External-supervisor</b></p>
+                <h6>MrS. Samadhi Chandanathilaka</h6>
+                </div>
+                
+             </div>
+          </div>
+        </div> 
+        <br> 
+      
+        <div class="row">
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <img src="https://res.cloudinary.com/hiruniherath/image/upload/v1729186692/WhatsApp_Image_2024-10-17_at_22.52.29_d03fb19b_ercynk.jpg"width="250px" height="250px" alt="" style="border-radius: 50%;object-fit: cover;">
+            <div style="text-align: center;padding-top:20px">
+              <h6><b>Herath  H M H S </b></h6>
+              <small >it21027888@my.sliit.lk</small></div>
+            
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <img src="https://res.cloudinary.com/hiruniherath/image/upload/v1729189059/c92a4de9-4de5-4226-ba37-03c617e34410.png"width="250px" height="250px" alt="" style="border-radius: 50%;object-fit: cover;">
+            <div style="text-align: center;padding-top:20px">
+              <h6><b> Jayaweera J M M G</b></h6>
+              <small>it20633868@my.sliit.lk</small></div>
+            
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <img src="https://res.cloudinary.com/hiruniherath/image/upload/v1729189170/Screenshot_2024-10-17_234750_my9udl.png" width="250px" height="250px" alt="" style="border-radius: 50%;object-fit: cover;">
+            <div style="text-align: center;padding-top:20px">
+              <h6><b>Jayasinghe J M Y</b></h6>
+            <small>it21045158@my.sliit.lk</small>
+            </div>
+            
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <img src="https://res.cloudinary.com/hiruniherath/image/upload/v1729189176/Screenshot_2024-10-17_234806_z5bsvj.png" width="250px" height="250px" alt="" style="border-radius: 50%;object-fit: cover;">
+            <div style="text-align: center;padding-top:20px">
+              <h6><b>Randeni K M T DB</b></h6>
+            <small>it21067938@my.sliit.lk</small>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>SLIIT Malabe Campus, New Kandy Rd, Malabe </address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p>+94 71 510 6291</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p>it21027888@my.sliit.lk</p>
+            </div>
+          </div>
+
+        </div>
+       
+
+   
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>SeamSense</h3>
+            <p>Seamsense is an innovative platform designed to optimize apparel manufacturing processes through real-time monitoring and predictive maintenance of sewing machines. Utilizing IoT sensors and machine learning, Seamsense enhances fabric and thread quality analysis, improves worker productivity, and streamlines production workflows. </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+                SLIIT Malabe Campus,<br>
+                New Kandy Rd, <br>
+                Malabe  <br>
+                
+                <strong>Phone:</strong> +94 71 510 6291<br>
+                <strong>Email:</strong> hiru.herath2008.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="https://www.facebook.com/tharindu.udana" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://instagram.com/tharindu_balasuriya?igshid=YmMyMTA2M2Y=" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/tharindu-balasuriya-4644a417a" class="linkedin"><i class="fa fa-linkedin"></i></a>
+			  <a href="https://twitter.com/Lakindukavishk1" class="twitter"><i class="fa fa-twitter"></i></a>
+
+            </div>
+
+          </div>
+
+           <div class="col-lg-3 col-md-6 footer-info">
+            <h4>Seamsense_Features</h4>
+<ul ul style="list-style-type: disc; padding-left: 20px;">
+  <li>Provide real-time monitoring of sewing machine performance and needle functionality</li>
+  <li>Predictive maintenance system for preventing breakdowns and improving operational life</li>
+  <li>Machine learning-based analysis for optimizing worker productivity and seating arrangements</li>
+  <li>Fabric and thread quality analysis using IoT sensors to enhance garment durability</li>
+  <li>Real-time data collection to streamline production workflow and reduce machine downtime</li>
+</ul>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; <strong>Seamsense_Copyright 2024 All Rights Reserved </strong>. 
+      </div>
+      <div class="credits">
+      
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+    <script src="assets/js/main.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+	<script  src="./script.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+
+  <!-- Research Gap -->
+<div class="modal fade" id="researchGap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Research Gap</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          The apparel industry, particularly in medium-scale businesses, has not fully harnessed automation and advanced technologies, leaving significant gaps in efficiency, productivity, and quality control. Traditional manual methods dominate pre-production and sewing operations, resulting in delays, errors, and underutilization of resources. The existing literature emphasizes the potential of predictive maintenance, machine learning, and IoT-based systems to enhance performance, yet these advancements remain largely underexplored in small to medium-sized apparel firms. There is limited research on the integration of real-time monitoring and machine vision technologies for predictive maintenance and workforce optimization in this sector. Additionally, the application of advanced algorithms like XGBoost, Random Forest, and YOLO for optimizing sewing machine performance, predicting maintenance needs, and managing labor tasks is a relatively new approach. This gap presents a compelling opportunity to develop innovative solutions tailored to medium-scale businesses, thereby addressing their specific challenges in reducing machine downtimes, improving workforce efficiency, and optimizing decision-making processes in pre-production.
+
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Lit Review -->
+ <div class="modal fade" id="litReview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Literature Review</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Sri Lanka’s apparel industry faces challenges in keeping
+          up with global standards due to outdated methodologies.
+          Key focus areas include sewing machine performance,
+          automated decision making, predictive maintenance,
+          workforce optimization, and operational efficiency
+          monitoring systems. The performance of sewing machines in
+          garment manufacturing is crucial for labor productivity and
+          quality control. Traditional manual methods often lead to
+          inconsistencies and high defect rates. Real-time monitoring
+          systems are essential for ensuring needle functionality and
+          stitch quality. This study focuses on developing real-time
+          monitoring systems using sensors and machine learning
+          to identify needle failures before they occur, using an IoT
+          device to identify broken needles and missing lengths.
+          Pre-production decision-making in the apparel industry
+          encompasses activities such as fabric selection, cost
+          estimation, and scheduling. These processes, when managed
+          manually, are prone to errors and inefficiencies. Automation
+          in pre-production decision-making has been shown to
+          streamline operations and improve accuracy. The study
+          discusses an automated system that integrates all pre
+          production decisions into a single platform, thereby reducing
+          planning time and minimizing human errors. This helps
+          the system to have real-time data, for instance in deciding
+          on which material to use, costing, and how to plan for
+          a smooth transition from designing to manufacturing. The
+          referred paper also clearly illustrates that the effectiveness of
+          predictive maintenance embraces not just the reliability of the
+          machine but also the efficiency of production by guaranteeing
+          that machines perform optimally [4]. Another crucial field
+          that is rapidly advancing at the moment is the preventive or
+          predictive maintenance of sewing machines. This is because,
+          machines which are usually programmed to run for a specific
+          number or period of time, breakdowns cause a lot of delay
+          in production and may lead to an increase in operating
+          expenses. Predictive maintenance systems take advantage of
+          analytical tools to assess the condition of sewing machines,
+          and consequently, predict failure occurrences. Studies show
+          that predictive maintenance not only increases the lifespan
+          of the machines being used in a manufacturing firm but also
+          productivity because machines are made to work within their
+          optimum capacity. This approach entails the frequent tracking
+          of real-time data and developments in order to prevent things
+          from breaking down and to ensure optimal utilization of the
+          equipment [5].
+          Increased productivity in garment manufacturing is the
+          key to achieving effective work force optimization and
+          operation efficiency. A common mode of task distribution at
+          the workplace tends to disregard the efficiency and capability
+          of the worker and this deforms the performance. The study
+          outlines the application of analytics and machine learning
+          algorithms to match tasks with the workers’ capabilities
+          and productivity. Finally, applications providing real-time
+          monitoring of worker productivity allow supervisors to
+          modify assignments in real time. This ensures that the skilled
+          are able to handle the complex job while other tasks are
+          shared out to balance them and so improve the line efficiency.
+          Mentioned such systems have been effective in increasing
+          operational efficiency and decreasing labor expenses [6].    </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Research Problem -->
+ <div class="modal fade" id="researchProb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Research Problem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          The apparel industry, particularly for medium-sized businesses, is heavily reliant on manual processes, especially in the pre-production and production phases. This reliance creates inefficiencies, such as unplanned machine downtimes, inconsistent quality control, and suboptimal workforce management. In Sri Lanka’s garment sector, these challenges hinder competitiveness in a global market that increasingly demands speed, precision, and adaptability. Furthermore, outdated machinery and reactive maintenance strategies exacerbate operational inefficiencies and increase production costs.
+
+This research seeks to address the critical problem of enhancing operational efficiency and productivity in medium-scale apparel manufacturing through the integration of advanced technologies like IoT devices, machine learning, and predictive maintenance systems. Specifically, the study aims to optimize sewing machine performance, automate pre-production decision-making, and develop real-time workforce monitoring and optimization systems. By doing so, the research hopes to close the existing gap in technological adoption, ultimately transforming the way apparel businesses operate. The core research problem, therefore, lies in developing a comprehensive, technology-driven framework to enhance efficiency, reduce manual errors, and improve overall quality control within the apparel manufacturing industry.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Research Problem -->
+ <div class="modal fade" id="researchProb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Research Problem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>The apparel industry, particularly medium-scale businesses, faces significant challenges in maintaining high operational efficiency, consistent product quality, and minimizing machine downtime due to outdated manual processes. In particular, critical factors such as pre-production decision-making, workforce optimization, and sewing machine maintenance, especially needle performance monitoring, are hindered by limited technological integration, leading to increased costs, inefficiencies, and inconsistent output.
+
+          The absence of automated systems for real-time monitoring and predictive maintenance of sewing machines results in frequent breakdowns, particularly due to needle wear and breakage, which disrupts production timelines and inflates maintenance costs. Additionally, manual labor allocation fails to optimize workforce productivity, with underutilization and overutilization being common. In pre-production stages, inaccurate fabric thread selection and cost estimations further compound inefficiencies.
+        </p>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Research obj -->
+ <div class="modal fade" id="researchObj" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Research Objectives</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>This research aims to revolutionize the apparel manufacturing process by integrating IoT-based solutions with machine learning to address key challenges. The primary focus is to enhance real-time monitoring of sewing machines, enabling manufacturers to track machine performance remotely and efficiently. This platform will provide continuous data streams, helping medium-scale manufacturers respond to performance issues promptly.
+          Additionally, predictive maintenance strategies will be implemented using machine learning algorithms to anticipate machine failures. This will minimize unexpected downtime and reduce maintenance costs by shifting from reactive to proactive maintenance practices.
+
+          To further streamline operations, automated systems will be developed to optimize pre-production decisions. These systems will assist in fabric selection, cost estimation, and production scheduling, thereby improving overall planning accuracy and minimizing resource wastage.
+          
+          The research also focuses on workforce optimization by designing a system that monitors employee performance metrics in real time. This system will enable dynamic task allocation, boost labor efficiency, and enhance operational productivity through better task management. Together, these objectives aim to increase efficiency, reduce costs, and improve the competitiveness of medium-scale apparel manufacturers.
+        </p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- methodology -->
+<div class="modal fade" id="methodology" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Methodology</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          This research leverages IoT and machine learning technologies to improve various aspects of apparel manufacturing, including pre-production decision-making, machine performance monitoring, predictive maintenance, and workforce optimization. Pre-production optimization focuses on fabric and thread selection, cost estimation, and scheduling accuracy. A weighted scoring model and regression algorithms are used to predict the durability of single, dual, and tri-blend fabrics based on tensile strength tests. Additionally, the system suggests optimal fabric-thread combinations aligned with end-use requirements, budget constraints, and future cost projections to enhance efficiency and profitability before production begins.
+
+          In the area of sewing machine monitoring, the study integrates needle performance tracking and predictive maintenance. The needle monitoring system employs YOLO-based machine learning models to detect and measure needle fragments after breakage, ensuring safety and minimizing risks. The Hall effect sensor system monitors needle movement in real time, alerting users to replace needles before failure occurs. Predictive maintenance extends to the sewing machines using XGBoost models trained on historical data to forecast the Remaining Useful Life (RUL) of components. A voltage monitoring system regulates power to machines, ensuring safe operations and preventing electrical malfunctions.
+          
+          The Workforce Optimization and Operational Efficacy Monitoring System (WOEMS) uses Random Forest Regression (RFR) to analyze employee performance and allocate tasks based on efficiency. A Grafana-based dashboard displays real-time worker metrics, while React and Chart.js enable dynamic visualization of productivity trends. Predictive analytics are employed to prevent performance declines by recommending corrective actions. This data-driven approach ensures smooth operations, enhances labor productivity, and minimizes inefficiencies through proactive decision-making.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
